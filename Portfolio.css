@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #080808;
+    color: #080808;
     line-height: 1.6;
 }
 
@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #0f0e0e;
     padding: 10px 20px;
     color: white;
 }
@@ -30,10 +30,11 @@ header .logo {
 #nav-menu {
     display: flex;
     gap: 20px;
+    color: #080707;
 }
 
 #nav-menu a {
-    color: white;
+    color: rgb(242, 238, 238);
     text-decoration: none;
     font-size: 1.1em;
     transition: color 0.3s ease;
@@ -53,31 +54,32 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #f7f3f3;
 }
 
 .home-content {
-    width: 50%;
+    width: 100%;
 }
 
 .home-content h1 {
     font-size: 2.5em;
-    color: #333;
+    color: #f7f6f6;
 }
 
 .home-content p {
     margin-top: 20px;
     font-size: 1.1em;
-    color: #666;
+    color: #f9f8f8;
 }
 
 .home-img img {
-    width: 300px;
-    border-radius: 50%;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 .sec-2, .sec-3, .sec-4, .sec-5 {
-    background-color: #fff;
+    background-color: #f3f1f1;
     margin-top: 20px;
 }
 
@@ -100,7 +102,7 @@ section {
 
 .sec-3 .project {
     width: 300px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -119,7 +121,7 @@ section {
 }
 
 .sec-3 .project .btn {
-    background-color: #333;
+    background-color: #353434;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -138,7 +140,7 @@ section {
 }
 
 .sec-5 {
-    background-color: #333;
+    background-color: #464545;
     color: white;
     padding: 50px 20px;
 }
@@ -153,7 +155,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #303030;
     color: white;
     text-align: center;
     padding: 20px;
@@ -174,14 +176,14 @@ footer p {
     margin-right: 5px; /* Adds space between the icon and text */
 }
 .sec-3, .sec-4 {
-    background-color: #f4f4f4; /* Light gray background for sections */
+    background-color: #171616; /* Light gray background for sections */
     padding: 20px;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 h1, h3 {
-    color: #333; /* Dark text for headings */
+    color: #f3eeee; /* Dark text for headings */
 }
 a {
     color: #0072ff; /* Blue links */
@@ -194,7 +196,7 @@ a:hover {
 }
 button {
     background-color: #0072ff; /* Blue button */
-    color: white; /* White text */
+    color: rgb(145, 142, 142); /* White text */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -203,7 +205,7 @@ button {
 }
 
 button:hover {
-    background-color: #00c6ff; /* Light blue on hover */
+    background-color: #8ad0e3; /* Light blue on hover */
 }
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
@@ -214,4 +216,80 @@ p {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
+body {
+    background-color: #121212 !important; /* Force dark mode */
+    color: #ffffff !important;
+}
+
+section, .sec-2, .sec-3, .sec-4, .sec-5 {
+    background-color: #1e1e1e !important; /* Dark background for all sections */
+    color: white !important; /* Ensure text is readable */
+}
+
+/* Update navigation */
+header {
+    background-color: #2d2929 !important;
+    color: white !important;
+}
+
+/* Update links for better visibility */
+a {
+    color: #4dabf7 !important; /* Light blue for visibility */
+}
+
+a:hover {
+    color: #00c6ff !important;
+}
+
+/* Buttons */
+button {
+    background-color: #2d2d2d !important;
+    color: white !important;
+}
+
+button:hover {
+    background-color: #3b3939 !important;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0; /* Slightly off-white for better readability */
+}
+
+section {
+    background-color: #1e1e1e;
+    padding: 50px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+/* Header & Footer */
+header, footer {
+    background-color: #0b0a0a;
+    color: rgb(247, 243, 243);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+button, .btn {
+    background: linear-gradient(45deg, #3b3b3b, #323232);
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 0.7em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #8a8988, #7cbadd);
+}
+.sec-3 img {
+    transition: transform 0.3s ease;
+}
+
+.sec-3 img:hover {
+    transform: scale(1.1);
+}
+
 
