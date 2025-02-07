@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+#nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+#nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+#nav-menu a:hover,
+#nav-menu a.active {
+    color: #ffd700; /* gold color on hover and active */
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.home-content {
+    width: 50%;
+}
+
+.home-content h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.home-content p {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.home-img img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.sec-2, .sec-3, .sec-4, .sec-5 {
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.sec-2 .text, .sec-3 {
+    text-align: center;
+}
+
+.sec-2 .img img {
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.sec-3 .project-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.sec-3 .project {
+    width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sec-3 .project h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.sec-3 .project p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.sec-3 .project .btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sec-3 .project .btn:hover {
+    background-color: #ffd700;
+}
+
+.sec-4 {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.sec-5 {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+}
+
+.call_to_action h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.call_to_action p {
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1em;
+}
+.contact-icon {
+    width: 20px; /* Adjust this to the desired size */
+    height: 20px; /* Ensure the height is the same as width for a square shape */
+    vertical-align: middle; /* Aligns the icon in line with text */
+    margin-right: 5px; /* Adds space between the icon and text */
+}
+.sec-3, .sec-4 {
+    background-color: #f4f4f4; /* Light gray background for sections */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h1, h3 {
+    color: #333; /* Dark text for headings */
+}
+a {
+    color: #0072ff; /* Blue links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #00c6ff; /* Change color on hover */
+}
+button {
+    background-color: #0072ff; /* Blue button */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00c6ff; /* Light blue on hover */
+}
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
