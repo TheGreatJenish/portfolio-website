@@ -3,76 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheGreatJenish</title>
+    <title>TheGreatJenish | Digital Trailblazer</title>
     <link rel="icon" href="images/new-logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="Portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Jen's HUB</a>
+        <div class="logo-container">
+            <a href="#" class="logo">Jenish</a>
+            <span class="logo-sub">TheGreat</span>
+        </div>
         <nav id="nav-menu">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#interest">Interest</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="nav-link active" data-text="Home">Home</a>
+            <a href="#about" class="nav-link" data-text="About">About</a>
+            <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+            <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+            <a href="#interest" class="nav-link" data-text="Interest">Interest</a>
+            <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
         </nav>
+        <div class="menu-btn">☰</div>
     </header>
 
-    <section id="home" class="home">
-        <div class="home-content">
-            <h1>Hello, I'm <span>Jen!</span></h1>
-            <p>Welcome to my portfolio website! You can find my socials and learn more about me here.</p>
-            <a href="#contact" class="btn">Contact Me</a>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Jenish Basnet">Jenish Basnet</h1>
+            <p class="tagline">Digital Trailblazer | Code & Crypto Enthusiast</p>
+            <a href="#contact" class="btn-neon">Let’s Collaborate</a>
         </div>
-        <div class="home-img">
-            <img src="images/profile.png" alt="About Me"> 
+        <div class="hero-bg"></div>
+    </section>
+
+    <section id="about" class="about container">
+        <h2 class="section-title">Who I Am</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>A visionary from Nepal, I’m diving deep into the worlds of web development, gaming, and blockchain. My mission? To build experiences that inspire and innovate.</p>
+            </div>
+            <div class="about-img">
+                <img src="images/aboutme.png" alt="Jenish" class="hover-scale">
+            </div>
         </div>
     </section>
 
-    <section id="about" class="sec-2">
-        <div class="text">
-            <h1>About Me</h1>
-            <p>I am an IT Aspirant from Nepal trying to figure out web development and coding.</p>
-        </div>
-        <div class="img">
-            <img src="images/aboutme.png" alt="About Me">
+    <section id="skills" class="skills container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <p>Web Development</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Gaming</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Crypto Knowledge</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 60%;"></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="interest" class="sec-3">
-        <h1>My Interests</h1>
-        
-        <p>I am interested in playing Story Games.</p>
-        <p>I also play Minecraft Hypixel Skyblock, and my IGN is TheGreatJenish.</p>
-        <p>I am also interested in cryptos, testnet projects, and stocks.</p>
-        <img src="images/interest.png" alt="My Interests">
+    <section id="projects" class="projects container">
+        <h2 class="section-title">My Work</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Portfolio V1</h3>
+                <p>A sleek personal site built with HTML, CSS, and JS.</p>
+                <a href="#" class="btn-neon small">View</a>
+            </div>
+            <div class="project-card">
+                <h3>Skyblock Bot</h3>
+                <p>A Discord bot for Hypixel Skyblock stats.</p>
+                <a href="#" class="btn-neon small">View</a>
+            </div>
+            <div class="project-card">
+                <h3>Crypto Tracker</h3>
+                <p>A testnet project for monitoring coin prices.</p>
+                <a href="#" class="btn-neon small">View</a>
+            </div>
+        </div>
     </section>
-    
 
-    <section id="contact" class="sec-4">
-        <div class="call_to_action">
-            <h3>Let's Connect!</h3>
-            <p>Email me at: 
-                <a href="mailto:jenishbasnet2020@email.com">
-                    <img src="images/gmail-icon.png" alt="Gmail" class="contact-icon"> jenishbasnet2020@email.com
-                </a>
-            </p>
-            <p>My Discord username is: 
-                <a href="https://discord.com/users/TheGreatJenish" target="_blank">
-                    <img src="images/discord-icon.png" alt="Discord" class="contact-icon"> TheGreatJenish
-                </a>
-            </p> 
-             <p>My <a href="https://discord.gg/xswEGbb5kn" target="_blank">Discord server</a> for Hypixel Skyblock guild!</p>
+    <section id="interest" class="interest container">
+        <h2 class="section-title">What Drives Me</h2>
+        <div class="interest-grid">
+            <div class="card">
+                <h3>Gaming</h3>
+                <p>Story-driven adventures and Hypixel Skyblock (IGN: TheGreatJenish).</p>
+            </div>
+            <div class="card">
+                <h3>Crypto & Stocks</h3>
+                <p>Exploring testnets, blockchain, and market trends.</p>
+            </div>
+            <div class="card">
+                <h3>Coding</h3>
+                <p>Building the future, one line at a time.</p>
+            </div>
         </div>
     </section>
+
+    <section id="contact" class="contact container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-links">
+            <a href="mailto:jenishbasnet2020@email.com" class="contact-item">
+                <img src="images/gmail-icon.png" alt="Gmail" class="contact-icon"> jenishbasnet2020@email.com
+            </a>
+            <a href="https://discord.com/users/TheGreatJenish" target="_blank" class="contact-item">
+                <img src="images/discord-icon.png" alt="Discord" class="contact-icon"> TheGreatJenish
+            </a>
+            <a href="https://discord.gg/xswEGbb5kn" target="_blank" class="contact-item">
+                <img src="images/discord-icon.png" alt="Discord Server" class="contact-icon"> Skyblock Guild
+            </a>
+            <a href="https://discord.gg/2XacnW5Gcs" target="_blank" class="contact-item">
+                <img src="images/discord-icon.png" alt="Crypto Server" class="contact-icon"> Crypto Testnet Hub
+            </a>
         </div>
     </section>
-    
-    
 
     <footer class="footer">
-        <h1>Thank You for Visiting</h1>
-        <p>© 2025 Jenish Basnet. All Rights Reserved.</p>
+        <p>© 2025 Jenish Basnet | Powered by Curiosity</p>
     </footer>
 
     <script src="script.js"></script>

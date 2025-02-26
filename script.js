@@ -1,21 +1,20 @@
-// Smooth Scroll for Navigation Links
+// Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });
 });
 
-// Update Active Class on Scroll
+// Active Nav on Scroll
 window.addEventListener('scroll', () => {
-    let sections = document.querySelectorAll('section');
-    let navLinks = document.querySelectorAll('#nav-menu a');
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
 
     sections.forEach((section, index) => {
-        let rect = section.getBoundingClientRect();
+        const rect = section.getBoundingClientRect();
         if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
             navLinks.forEach(link => link.classList.remove('active'));
             navLinks[index].classList.add('active');
@@ -23,10 +22,33 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Mobile Menu Toggle (Optional - if you add a mobile menu button in HTML)
+// Mobile Menu Toggle
 const menuToggle = document.getElementById('nav-menu');
-const menuButton = document.querySelector('.menu-btn'); // Example: hamburger icon
+const menuButton = document.querySelector('.menu-btn');
 
-menuButton.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');  // Toggle the navigation menu visibility
+if (menuButton) {
+    menuButton.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+    });
+}
+
+// Parallax Effect on Hero Background
+const heroBg = document.querySelector('.hero-bg');
+window.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY;
+    heroBg.style.transform = `translateY(${scrollPos * 0.5}px)`;
+});
+
+// Animate Skill Bars on Scroll
+const skillsSection = document.getElementById('skills');
+const skillBars = document.querySelectorAll('.skill-progress');
+
+window.addEventListener('scroll', () => {
+    const rect = skillsSection.getBoundingClientRect();
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+        skillBars.forEach(bar => {
+            const width = bar.style.width;
+            bar.style.setProperty('--width', width);
+        });
+    }
 });
