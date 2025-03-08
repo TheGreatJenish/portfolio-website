@@ -71,18 +71,13 @@
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Portfolio V1</h3>
-                    <p>A personal site built with HTML, CSS, and JS.</p>
+                    <h3>This Website</h3>
+                    <p>A personal portfolio site built with HTML, CSS, and JavaScript.</p>
                     <a href="#" class="btn small">View</a>
                 </div>
                 <div class="project-card">
-                    <h3>Skyblock Bot</h3>
-                    <p>A Discord bot for Hypixel Skyblock stats.</p>
-                    <a href="#" class="btn small">View</a>
-                </div>
-                <div class="project-card">
-                    <h3>Crypto Tracker</h3>
-                    <p>A testnet tool for monitoring coin prices.</p>
+                    <h3>App Development</h3>
+                    <p>Working on a mobile app (nothing major yet).</p>
                     <a href="#" class="btn small">View</a>
                 </div>
             </div>
@@ -93,11 +88,15 @@
         <div class="container">
             <h2 class="section-title">Games</h2>
             <div class="game-container">
-                <h3>Sanji Runner</h3>
-                <p>Help Sanji run through the Grand Line, jumping over Marine swords and collecting ingredients! Press <strong>Spacebar</strong> to jump, and collect meat to score points. Press <strong>R</strong> to restart after a game over.</p>
-                <button id="start-game-btn" class="btn">Start Game</button>
-                <div id="game-canvas" style="display: none;"></div>
-                <p id="game-score" style="display: none;">Score: 0</p>
+                <h3>One Piece Trivia Quiz</h3>
+                <p>Test your *One Piece* knowledge with increasingly difficult questions! Select an answer for each question and proceed with 'Next Question'. Your score will be revealed at the end.</p>
+                <div id="quiz-container">
+                    <p id="question"></p>
+                    <div id="options"></div>
+                    <button id="next-question-btn" class="btn">Next Question</button>
+                    <p id="result" style="display: none;"></p>
+                    <p id="score" style="display: none;">Score: 0/10</p>
+                </div>
             </div>
         </div>
     </section>
@@ -131,7 +130,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
-    <script src="sanji-game.js"></script>
+    <script src="trivia-quiz.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

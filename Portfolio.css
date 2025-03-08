@@ -255,15 +255,56 @@ header {
     margin-bottom: 20px;
 }
 
-#game-canvas {
-    border: 2px solid #00c4cc;
-    border-radius: 5px;
+#quiz-container {
+    margin-top: 20px;
+}
+
+#question {
+    font-size: 1.2em;
     margin-bottom: 15px;
 }
 
-#game-score {
+#options {
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background: #2a3e5a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.option-btn:hover {
+    background: #3a4e6a;
+}
+
+.option-btn.selected {
+    background: #00c4cc;
+}
+
+#next-question-btn {
+    margin-top: 10px;
+}
+
+#result {
+    font-size: 1.1em;
+    color: #d0d0d0;
+    margin-top: 10px;
+}
+
+#score {
     font-size: 1.2em;
     color: #00c4cc;
+    margin-top: 10px;
 }
 
 /* Contact */
