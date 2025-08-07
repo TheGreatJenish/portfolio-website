@@ -1,136 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheGreatJenish</title>
-    <link rel="icon" href="images/new-logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="Portfolio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jenish Basnet - Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="#home">TheGreatJenish</a>
-        </div>
-        <nav id="nav-menu">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#games" class="nav-link">Games</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-        <div class="menu-btn">☰</div>
-    </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>TheGreatJenish</h1>
-            <p class="subtitle">Visionary Developer & Innovator</p>
-            <a href="#contact" class="btn">Get in Touch</a>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="images/aboutme.png" alt="Jenish Basnet" class="profile-pic">
+    <p>Hi, I'm Jenish Basnet.<br>
+      I'm a Computer Science student at Lyon College in the US. I’m curious about computers and tech — especially data science, AI, and machine learning.<br>
+      I’m still learning but enjoy working on small projects and exploring new tech. I also love gaming, photography, and being outdoors.<br>
+      Thanks for stopping by my site!
+    </p>
+  </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I'm Jenish Basnet, a passionate creator from Nepal, diving into web development, gaming, and blockchain. My goal is to craft innovative solutions that leave a lasting impact.</p>
-                </div>
-                <div class="about-img">
-                    <img src="images/aboutme.jpg" alt="Jenish Basnet" class="profile-img">
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>
+      Finished Higher Secondary at Himalaya Secondary English School, Nepal.<br>
+      Started Bachelor's in IT at Padmashree College, but left after 6 months when I got my US visa.<br>
+      Currently studying Computer Science at Lyon College.
+    </p>
+    <img src="images/lyon-college.png" alt="Lyon College Logo" class="lyon-logo">
+  </section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <h3>Gaming</h3>
-                    <div class="progress-bar"><span style="width: 85%;"></span></div>
-                </div>
-                <div class="skill-item">
-                    <h3>Blockchain</h3>
-                    <div class="progress-bar"><span style="width: 60%;"></span></div>
-                </div>
-                <div class="skill-item">
-                    <h3>Web Development</h3>
-                    <div class="progress-bar"><span style="width: 70%;"></span></div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>SQL</li>
+      <li>Basic Machine Learning</li>
+      <li>HTML & CSS</li>
+      <li>Some JavaScript</li>
+    </ul>
+    <p>Still improving, so not perfect yet!</p>
+  </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>This Website</h3>
-                    <p>A personal portfolio site built with HTML, CSS, and JavaScript.</p>
-                    <a href="#" class="btn small">View</a>
-                </div>
-                <div class="project-card">
-                    <h3>App Development</h3>
-                    <p>Working on a mobile app (nothing major yet).</p>
-                    <a href="#" class="btn small">View</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Game Mod on GitHub:</strong> Started making a mod for a game, shared it on GitHub. Learned a lot but later stopped working on it.</li>
+      <li><strong>This Website:</strong> Built this site myself using HTML and CSS. Simple, but I’m proud!</li>
+    </ul>
+  </section>
 
-    <section id="games" class="section">
-        <div class="container">
-            <h2 class="section-title">Games</h2>
-            <div class="game-container">
-                <h3>One Piece Trivia Quiz</h3>
-                <p>Test your *One Piece* knowledge with increasingly difficult questions! Select an answer for each question and proceed with 'Next Question'. Your score will be revealed at the end.</p>
-                <div id="quiz-container">
-                    <p id="question"></p>
-                    <div id="options"></div>
-                    <button id="next-question-btn" class="btn">Next Question</button>
-                    <p id="result" style="display: none;"></p>
-                    <p id="score" style="display: none;">Score: 0/10</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Games Section -->
+  <section id="games">
+    <h2>Games I Enjoy</h2>
+    <ul class="games-list">
+      <li><img src="images/godofwar.png" alt="God of War" class="game-icon"> God of War</li>
+      <li><img src="images/ghostoftsushima.png" alt="Ghost of Tsushima" class="game-icon"> Ghost of Tsushima</li>
+      <li><img src="images/minecraft.png" alt="Minecraft" class="game-icon"> Minecraft</li>
+      <li><img src="images/clashofclans.png" alt="Clash of Clans" class="game-icon"> Clash of Clans</li>
+      <li><img src="images/blackmythwukong.png" alt="Black Myth: Wukong" class="game-icon"> Black Myth: Wukong</li>
+      <li><img src="images/rdr.png" alt="Red Dead Redemption" class="game-icon"> Red Dead Redemption</li>
+      <li><img src="images/skyrim.png" alt="Skyrim" class="game-icon"> Skyrim</li>
+    </ul>
+  </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-links">
-                <a href="mailto:jenishbasnet2020@gmail.com" class="contact-item">
-                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                    jenishbasnet2020@gmail.com
-                </a>
-                <a href="https://discord.com/users/TheGreatJenish" target="_blank" class="contact-item">
-                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3752-.4447.8648-.6089 1.2495-1.8442-.2762-3.68-.2762-5.4868 0-.1642-.3847-.3977-.8743-.6089-1.2495a.077.077 0 00-.0785-.0371 19.7363 19.7363 0 00-4.8852 1.5152.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0821.0821 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0064a.0776.0776 0 00.0837-.0493c.5469-1.3618 1.0088-2.6766 1.377-3.8792a.0859.0859 0 00-.0447-.1122c-1.7568-.8782-3.1753-2.1537-3.9348-3.5118a.0745.0745 0 01.0135-.0957c.6136-.8964 1.2719-1.9746 1.9848-3.0569a.077.077 0 00-.0126-.1028c-.802-.9322-1.6786-2.1666-2.0988-3.391a.0888.0888 0 01.0408-.1161c2.3-1.1378 4.6734-1.6585 7.0027-1.6146a.0748.0748 0 00.0703-.1426c-.8512-2.3995-1.6958-4.8888-1.9867-6.3816a.0758.0758 0 01.0306-.077 19.7954 19.7954 0 014.8853-1.5152.0741.0741 0 00.0784.0371c.213.3753.4458.8649.609 1.2495 1.8442-.2762 3.68-.2762 5.4867 0 .1631-.3846.3967-.8743.6089-1.2495a.0778.0778 0 00-.0785-.0371 19.7363 19.7363 0 014.8852 1.5152.0699.0699 0 00.0321.0277c1.8249 1.2129 3.4346 3.779 4.2947 6.6878.0082.0245.0296.0371.0518.0268 2.0716-1.4637 4.0585-2.3768 5.9918-3.0103a.0827.0827 0 00.0313-.0562c.4181-4.5015-.8319-9.0346-3.3948-13.6859a.0658.0658 0 00-.0322-.0286zM8.1646 15.2897c-1.7432 0-3.1518-1.6178-3.1518-3.597 0-1.9768 1.4162-3.5926 3.1518-3.5926s3.1518 1.6158 3.1518 3.5926c0 1.9792-1.4086 3.597-3.1518 3.597zm7.6709 0c-1.7432 0-3.1518-1.6178-3.1518-3.597 0-1.9768 1.4162-3.5926 3.1518-3.5926s3.1518 1.6158 3.1518 3.5926c0 1.9792-1.4086 3.597-3.1518 3.597z"/></svg>
-                    TheGreatJenish
-                </a>
-                <a href="https://discord.gg/xswEGbb5kn" target="_blank" class="contact-item">
-                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3752-.4447.8648-.6089 1.2495-1.8442-.2762-3.68-.2762-5.4868 0-.1642-.3847-.3977-.8743-.6089-1.2495a.077.077 0 00-.0785-.0371 19.7363 19.7363 0 00-4.8852 1.5152.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0821.0821 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0064a.0776.0776 0 00.0837-.0493c.5469-1.3618 1.0088-2.6766 1.377-3.8792a.0859.0859 0 00-.0447-.1122c-1.7568-.8782-3.1753-2.1537-3.9348-3.5118a.0745.0745 0 01.0135-.0957c.6136-.8964 1.2719-1.9746 1.9848-3.0569a.077.077 0 00-.0126-.1028c-.802-.9322-1.6786-2.1666-2.0988-3.391a.0888.0888 0 01.0408-.1161c2.3-1.1378 4.6734-1.6585 7.0027-1.6146a.0748.0748 0 00.0703-.1426c-.8512-2.3995-1.6958-4.8888-1.9867-6.3816a.0758.0758 0 01.0306-.077 19.7954 19.7954 0 014.8853-1.5152.0741.0741 0 00.0784.0371c.213.3753.4458.8649.609 1.2495 1.8442-.2762 3.68-.2762 5.4867 0 .1631-.3846.3967-.8743.6089-1.2495a.0778.0778 0 00-.0785-.0371 19.7363 19.7363 0 014.8852 1.5152.0699.0699 0 00.0321.0277c1.8249 1.2129 3.4346 3.779 4.2947 6.6878.0082.0245.0296.0371.0518.0268 2.0716-1.4637 4.0585-2.3768 5.9918-3.0103a.0827.0827 0 00.0313-.0562c.4181-4.5015-.8319-9.0346-3.3948-13.6859a.0658.0658 0 00-.0322-.0286zM8.1646 15.2897c-1.7432 0-3.1518-1.6178-3.1518-3.597 0-1.9768 1.4162-3.5926 3.1518-3.5926s3.1518 1.6158 3.1518 3.5926c0 1.9792-1.4086 3.597-3.1518 3.597zm7.6709 0c-1.7432 0-3.1518-1.6178-3.1518-3.597 0-1.9768 1.4162-3.5926 3.1518-3.5926s3.1518 1.6158 3.1518 3.5926c0 1.9792-1.4086 3.597-3.1518 3.597z"/></svg>
-                    Skyblock Guild
-                </a>
-                <a href="https://discord.gg/2XacnW5Gcs" target="_blank" class="contact-item">
-                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3752-.4447.8648-.6089 1.2495-1.8442-.2762-3.68-.2762-5.4868 0-.1642-.3847-.3977-.8743-.6089-1.2495a.077.077 0 00-.0785-.0371 19.7363 19.7363 0 00-4.8852 1.5152.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0821.0821 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0064a.0776.0776 0 00.0837-.0493c.5469-1.3618 1.0088-2.6766 1.377-3.8792a.0859.0859 0 00-.0447-.1122c-1.7568-.8782-3.1753-2.1537-3.9348-3.5118a.0745.0745 0 01.0135-.0957c.6136-.8964 1.2719-1.9746 1.9848-3.0569a.077.077 0 00-.0126-.1028c-.802-.9322-1.6786-2.1666-2.0988-3.391a.0888.0888 0 01.0408-.1161c2.3-1.1378 4.6734-1.6585 7.0027-1.6146a.0748.0748 0 00.0703-.1426c-.8512-2.3995-1.6958-4.8888-1.9867-6.3816a.0758.0758 0 01.0306-.077 19.7954 19.7954 0 014.8853-1.5152.0741.0741 0 00.0784.0371c.213.3753.4458.8649.609 1.2495 1.8442-.2762 3.68-.2762 5.4867 0 .1631-.3846.3967-.8743.6089-1.2495a.0778.0778 0 00-.0785-.0371 19.7363 19.7363 0 014.8852 1.5152.0699.0699 0 00.0321.0277c1.8249 1.2129 3.4346 3.779 4.2947 6.6878.0082.0245.0296.0371.0518.0268 2.0716-1.4637 4.0585-2.3768 5.9918-3.0103a.0827.0827 0 00.0313-.0562c.4181-4.5015-.8319-9.0346-3.3948-13.6859a.0658.0658 0 00-.0322-.0286zM8.1646 15.2897c-1.7432 0-3.1518-1.6178-3.1518-3.597 0-1.9768 1.4162-3.5926 3.1518-3.5926s3.1518 1.6158 3.1518 3.5926c0 1.9792-1.4086 3.597-3.1518 3.597zm7.6709 0c-1.7432 0-3.1518-1.6178-3.1518-3.597 0-1.9768 1.4162-3.5926 3.1518-3.5926s3.1518 1.6158 3.1518 3.5926c0 1.9792-1.4086 3.597-3.1518 3.597z"/></svg>
-                    Crypto Testnet Hub
-                </a>
-            </div>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>
+        <a href="mailto:jenishbasnet2020@gmail.com">
+          <img src="images/gmail-icon.png" alt="Email" class="icon"> jenishbasnet2020@gmail.com
+        </a>
+      </li>
+      <li>
+        <a href="https://discord.com/users/your_user_id_here" target="_blank">
+          <img src="images/discord-icon.png" alt="Discord" class="icon"> thegreatjenish
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/jenish-basnet-08ab96327/" target="_blank">
+          <img src="images/linkedin-icon.png" alt="LinkedIn" class="icon"> Jenish Basnet
+        </a>
+      </li>
+    </ul>
+  </section>
 
-    <footer class="footer">
-        <p>© 2025 Jenish Basnet | All Rights Reserved</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
-    <script src="trivia-quiz.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
