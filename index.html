@@ -1,93 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jenish Basnet - Portfolio</title>
-  <link rel="stylesheet" href="portfolio.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenish Basnet | CS Student & Gamer</title>
+    <meta name="description" content="Computer Science student from Nepal, currently studying at Lyon College, Arkansas. Love gaming, data science, and coding.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Timeline icon styles */
+        .timeline-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            vertical-align: middle;
+            border-radius: 4px;
+            object-fit: contain;
+        }
+        
+        /* Interest game icon styles */
+        .interest-game-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        
+        /* Ensure timeline titles align properly */
+        .timeline-title {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <a href="#" class="logo">JB</a>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#journey">Journey</a></li>
+                        <li><a href="#studies">Studies</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="images/aboutme.png" alt="Jenish Basnet" class="profile-pic">
-    <p>Hi, I'm Jenish Basnet.<br>
-      I'm a Computer Science student at Lyon College in the US. I’m curious about computers and tech — especially data science, AI, and machine learning.<br>
-      I’m still learning but enjoy working on small projects and exploring new tech. I also love gaming, photography, and being outdoors.<br>
-      Thanks for stopping by my site!
-    </p>
-  </section>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text fade-in">
+                        <div class="greeting">Hey there! 👋</div>
+                        <h1 class="name">I'm Jenish Basnet</h1>
+                        <p class="tagline">
+                          I'm studying Computer Science at Lyon College, USA. I've always been curious about tech, especially AI, ML, and data science, which started with my love for gaming. I enjoy photography, music, and outdoor adventures too.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i> Get in touch
+                            </a>
+                            <a href="#journey" class="btn btn-outline">
+                                <i class="fas fa-user"></i> My story
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="fade-in">
+                        <img src="images/profile.jpg" alt="Jenish Basnet - Computer Science Student" class="profile-image">
+                    </div>
+                    
+                    <div class="hero-stats fade-in">
+                        <div class="stat">
+                            <span class="stat-number">2025</span>
+                            <span class="stat-label">Started at Lyon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Education Section -->
-  <section id="education">
-    <h2>Education</h2>
-    <p>
-      Finished Higher Secondary at Himalaya Secondary English School, Nepal.<br>
-      Started Bachelor's in IT at Padmashree College, but left after 6 months when I got my US visa.<br>
-      Currently studying Computer Science at Lyon College.
-    </p>
-    <img src="images/lyon-college.png" alt="Lyon College Logo" class="lyon-logo">
-  </section>
+        <section id="journey" class="journey">
+            <div class="container">
+                <h2 class="section-title fade-in">My Journey So Far</h2>
+                <div class="timeline">
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-date">2022-2024</div>
+                        <h3 class="timeline-title">
+                            <img src="images/himalaya.png" alt="Himalaya Secondary English School" class="timeline-icon" loading="lazy">
+                             High School in Nepal
+                        </h3>
+                        <p class="timeline-desc">
+                            Completed Higher Secondary at Himalaya Secondary English School with Science Stream. 
+                            This is where I first got interested in computers and started gaming seriously.
+                        </p>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-date">2024-2025</div>
+                        <h3 class="timeline-title">
+                            <img src="images/padmashree.png" alt="Padmashree International College" class="timeline-icon" loading="lazy">
+                             First College Experience
+                        </h3>
+                        <p class="timeline-desc">
+                            Started Bachelors in IT at Padmashree International College in Nepal. 
+                            Only stayed 6 months, but learned some programming basics and decided I wanted to study abroad.
+                        </p>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-date">2025</div>
+                        <h3 class="timeline-title">✈️ The Big Move</h3>
+                        <p class="timeline-desc">
+                            Got my US visa and made the leap to study abroad! It was nerve-wracking leaving everything behind, 
+                            but I knew it was the right choice for my future.
+                        </p>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-date">2025-Present</div>
+                        <h3 class="timeline-title">
+                            <img src="images/lyon-college.png" alt="Lyon College" class="timeline-icon" loading="lazy">
+                             Lyon College Life
+                        </h3>
+                        <p class="timeline-desc">
+                            Currently studying Computer Science at Lyon College, Arkansas. Taking courses in data science, 
+                            Java programming, and other CS fundamentals. Still finding my way but loving the journey!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>SQL</li>
-      <li>Basic Machine Learning</li>
-      <li>HTML & CSS</li>
-      <li>Some JavaScript</li>
-    </ul>
-    <p>Still improving, so not perfect yet!</p>
-  </section>
+        <section id="studies" class="studies">
+            <div class="container">
+                <h2 class="section-title fade-in">What I'm Actually Learning</h2>
+                <p class="section-subtitle fade-in">Being honest about where I am in my CS journey(First Sem)</p>
+                
+                <div class="studies-grid">
+                    <div class="study-category fade-in">
+                        <div class="study-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3 class="study-name">Java Programming</h3>
+                        <ul class="study-list">
+                            <li>Currently learning in class</li>
+                            <li>Object-oriented programming concepts</li>
+                            <li>Working through assignments</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="study-category fade-in">
+                        <div class="study-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="study-name">Data Science</h3>
+                        <ul class="study-list">
+                            <li>Introduction to data analysis</li>
+                            <li>Learning statistics basics</li>
+                            <li>Really interested in this field!</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="study-category fade-in">
+                        <div class="study-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="study-name">Other CS Subjects</h3>
+                        <ul class="study-list">
+                            <li>Computer Science fundamentals</li>
+                            <li>Maths</li>
+                            <li>English</li>
+                            <li>Problem-solving approaches</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Game Mod on GitHub:</strong> Started making a mod for a game, shared it on GitHub. Learned a lot but later stopped working on it.</li>
-      <li><strong>This Website:</strong> Built this site myself using HTML and CSS. Simple, but I’m proud!</li>
-    </ul>
-  </section>
+        <section id="interests" class="interests">
+            <div class="container">
+                <h2 class="section-title fade-in">What I Actually Love Doing</h2>
+                <div class="interests-grid">
+                    <div class="interest-card fade-in">
+                        <div class="interest-icon gaming">
+                            <img src="images/godofwar.png" alt="God of War" class="interest-game-icon" loading="lazy">
+                        </div>
+                        <h3 class="interest-name">Story-Driven Gaming</h3>
+                        <p class="interest-desc">Absolutely love games with amazing stories - God of War, Ghost of Tsushima, Red Dead Redemption, and Skyrim are some of my favorites!</p>
+                    </div>
+                    
+                    <div class="interest-card fade-in">
+                        <div class="interest-icon mobile-gaming">
+                            <img src="images/clashofclans.png" alt="Clash of Clans" class="interest-game-icon" loading="lazy">
+                        </div>
+                        <h3 class="interest-name">Mobile Gaming</h3>
+                        <p class="interest-desc">Been playing Clash of Clans and Clash Royale for years! Also enjoy Minecraft - there's something relaxing about building and exploring.</p>
+                    </div>
+                    
+                    <div class="interest-card fade-in">
+                        <div class="interest-icon photography">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3 class="interest-name">Photography</h3>
+                        <p class="interest-desc">Love capturing moments and landscapes. Arkansas has some beautiful scenery thats somewhat close to Nepal!</p>
+                    </div>
+                    
+                    <div class="interest-card fade-in">
+                    <div class="interest-icon movies"> 
+                       <i class="fas fa-film"></i>
+                      </div>
+                     <h3 class="interest-name">Series & Movies</h3>
+                     <p class="interest-desc">
+                    I enjoy watching epic series like <strong>Game of Thrones</strong>,  
+                     <strong>Vikings</strong>, and <strong>Breaking Bad</strong>. 
+                     Along with many other epic movies.
+                           </p>
+                    </div>
 
-  <!-- Games Section -->
-  <section id="games">
-    <h2>Games I Enjoy</h2>
-    <ul class="games-list">
-      <li><img src="images/godofwar.png" alt="God of War" class="game-icon"> God of War</li>
-      <li><img src="images/ghostoftsushima.png" alt="Ghost of Tsushima" class="game-icon"> Ghost of Tsushima</li>
-      <li><img src="images/minecraft.png" alt="Minecraft" class="game-icon"> Minecraft</li>
-      <li><img src="images/clashofclans.png" alt="Clash of Clans" class="game-icon"> Clash of Clans</li>
-      <li><img src="images/blackmythwukong.png" alt="Black Myth: Wukong" class="game-icon"> Black Myth: Wukong</li>
-      <li><img src="images/rdr.png" alt="Red Dead Redemption" class="game-icon"> Red Dead Redemption</li>
-      <li><img src="images/skyrim.png" alt="Skyrim" class="game-icon"> Skyrim</li>
-    </ul>
-  </section>
+                    
+                    <div class="interest-card fade-in">
+                        <div class="interest-icon hiking">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3 class="interest-name">Outdoor Stuff</h3>
+                        <p class="interest-desc">Coming from Nepal, I love being outdoors. Arkansas trails are different but still great for clearing my head.</p>
+                    </div>
+                    
+                    <div class="interest-card fade-in">
+                        <div class="interest-icon learning">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 class="interest-name">Learning New Things</h3>
+                        <p class="interest-desc">Always curious about how things work. YouTube tutorials, online courses, random Wikipedia articles - I'm always learning something!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul>
-      <li>
-        <a href="mailto:jenishbasnet2020@gmail.com">
-          <img src="images/gmail-icon.png" alt="Email" class="icon"> jenishbasnet2020@gmail.com
-        </a>
-      </li>
-      <li>
-        <a href="https://discord.com/users/your_user_id_here" target="_blank">
-          <img src="images/discord-icon.png" alt="Discord" class="icon"> thegreatjenish
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/jenish-basnet-08ab96327/" target="_blank">
-          <img src="images/linkedin-icon.png" alt="LinkedIn" class="icon"> Jenish Basnet
-        </a>
-      </li>
-    </ul>
-  </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title fade-in">Let's Connect!</h2>
+                <p class="fade-in" style="color: var(--text-light); margin-bottom: 2rem;">
+                    Always down to chat about games, tech, college life, or anything really. Feel free to reach out!
+                </p>
+                <div class="contact-grid">
+                    <a href="mailto:jenishbasnet2020@gmail.com" class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-label">Email</div>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/jenish-basnet-08ab96327/" target="_blank" class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-label">LinkedIn</div>
+                    </a>
+                    
+                    <a href="https://github.com/TheGreatJenish" target="_blank" class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-label">GitHub</div>
+                    </a>
+                    
+                    <a href="https://discord.gg/users/thegreatjenish" target="_blank" class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="contact-label">Discord</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> Jenish Basnet. Still learning, still building ✨</p>
+                <button class="scroll-top" id="scroll-top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
